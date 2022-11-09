@@ -63,29 +63,29 @@ else{
 //Assignment
 //Build a counter App using HTML, CSS,JS & App
 
-let btnAdd = document.getElementById("add");
-let btnMinus = document.getElementById("minus");
-let btnReset = document.getElementById("reset");
+// let btnAdd = document.getElementById("add");
+// let btnMinus = document.getElementById("minus");
+// let btnReset = document.getElementById("reset");
 
-let numContainer = document.getElementById("num");
-let value = 0;
+// let numContainer = document.getElementById("num");
+// let value = 0;
 
-btnAdd.onclick = () => {
-  document.getElementById("add");
-  value++;
-  numContainer.innerHTML = value;
-};
+// btnAdd.onclick = () => {
+//   document.getElementById("add");
+//   value++;
+//   numContainer.innerHTML = value;
+// };
 
-btnMinus.onclick = () => {
-  document.getElementById("minus");
-  value--;
-  numContainer.innerHTML = value;
-};
+// btnMinus.onclick = () => {
+//   document.getElementById("minus");
+//   value--;
+//   numContainer.innerHTML = value;
+// };
 
-btnReset.onclick = () => {
-  value = 0;
-  numContainer.innerHTML = value;
-};
+// btnReset.onclick = () => {
+//   value = 0;
+//   numContainer.innerHTML = value;
+// };
 
 //Assignment
 //write a function that calculates the area of a circle
@@ -102,4 +102,22 @@ function circleArea(){
 circleArea();
 
 
+
+
+//assignment
+//create a weather app 
+
+//assignment
+//write a function using history api
+
+function historyFunction() {
+  window.history.back();
+  window.history.forward()
+}
+
+
+
+
+
+  
 
