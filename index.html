@@ -1,41 +1,278 @@
-<!DOCTYPE html>
-<html lang="en">
-<link rel="stylesheet" href="styles.css">
+<!doctype>
+<html lang="en-us">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
 
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@700&display=swap" rel="stylesheet" />
-    <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+        * {
+            box-sizing: "border-box";
+        }
+
+        li,
+        a {
+            text-decoration: none;
+            list-style-type: none;
+            color: crimson;
+            font-weight: bolder;
+            margin-top: 10px;
+
+        }
+
+        .row {
+            display: " flex";
+        }
+
+        .goal li a {
+            color: white;
+            font-weight: bolder;
+        }
+
+        .goals {
+            background: darkslategray;
+        }
+
+        .down {
+            text-align: center;
+
+        }
+
+        .list {
+            background: darkslategray;
+        }
+
+        .list2 {
+            background: darkslategray;
+        }
+
+        footer {
+            background: black;
+            color: yellow;
+            text-align: center;
+        }
+
+        button {
+            background: none;
+            text-decoration: none;
+            border-radius: 5px;
+            border: none;
+        }
+
+        .read-more-container {
+            display: flex;
+            flex-direction: column;
+            color: #111;
+
+        }
+
+        .container {
+            padding: 2rem;
+            background-color: #fff;
+            border-radius: 2px;
+            line-height: 1.4rem;
+            font-family: sans-serif;
+        }
+
+        .read-more-btn {
+            color: #0984e3;
+            cursor: pointer;
+        }
+
+        .read-more-text {
+            display: none;
+        }
+
+        .read-more-text--show {
+            display: inline;
+        }
+    </style>
+
 </head>
 
-<body>
-    <div class="container">
-        <h1 id="num">0</h1>
-        <div class="btns">
-            <button id="minus">
-                <i class="fas fa-minus"></i>
-            </button>
-            <button id="reset">
-                <i class="fas fa-redo"></i>
-            </button>
-            <button id="add">
-                <i class="fas fa-plus"></i>
-            </button>
+<body class="container">
+    <!-- creating a Nav -->
+    <nav class="navbar bg-dark drop-down goal">
+        <li class="nav-item"> <a class="nav-link" href="#"> Home </a> </li>
+        <li class="nav-link"> <a class="nav-item" href="#"> About </a> </li>
+        <li>
+            <div class="dropdown">
+                <button type="button" id="dropdownMenuButton" data-toggle="dropdown"> <a class="nav-item" href="#">
+                        Contact </a>
+                </button>
+                <div class="dropdown-menu goals" aria-labelledby="dropdownMenuButton">
+                    <a class="dropdown-item" href="#">Email</a>
+                    <a class="dropdown-item" href="#">Location</a>
+                    <a class="dropdown-item" href="#">Address</a>
+                </div>
+            </div>
+
+        </li>
+        <li class="nav-link badge"> <a class="nav-item badge" href="#">Notification </a><span class="bagde Sup"> 5
+            </span></li>
+    </nav>
+
+    <!--creating the sections for the web content
+-->
+    <img src="/download.jpg" width="100%" height="50%" border-radius=50% />
+    <div class=" container">
+
+        <!--Column A
+    </div>
+    <div class="col bg-danger">
+       Column B
+      
+    </div> -->
+        <div class="row">
+            <div class="">
+                <div class=" border-0 card 1st" style="width: 100%;">
+                    <img class="pix" src="/istockphoto-1301953681-170667a.jpg" width="90%" height="20%">
+                    <div class="card-body">
+                        <h5 class="card-title">Naomi Young </h5>
+                        <p> Teacher || Developer || Baker</p>
+                        <a href="https://twitter.com/Naomi4" class="card-link">
+                            Follow Me </a>
+
+                    </div>
+                    <div class="row">
+                        <div class="col-4 m-2">
+                            <button class="badge bg-danger "> Notification <span class="badge bg-white"> 15 </span>
+                            </button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="col">
+                    <ul class="mt-1 pt-4">
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                aria-expanded="false">Friends (20)
+                            </a>
+                            <div class="dropdown-menu list" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Oscar</a>
+                                <a class="dropdown-item" href="#">Stan</a>
+                                <a class="dropdown-item" href="#">Steve</a>
+                                <a class="dropdown-item" href="#">Paul</a>
+                                <a class="dropdown-item" href="#">Fred</a>
+                                <a class="dropdown-item" href="#">Morales</a>
+                                <a class="dropdown-item" href="#">Address</a>
+                                <a class="dropdown-item" href="#">Pique</a>
+                                <a class="dropdown-item" href="#">Gaucho</a>
+                                <a class="dropdown-item" href="#">John</a>
+                                <a class="dropdown-item" href="#">Hazard</a>
+                                <a class="dropdown-item" href="#">Mikel</a>
+                                <a class="dropdown-item" href="#">Saint</a>
+                                <a class="dropdown-item" href="#">Koke</a>
+                                <a class="dropdown-item" href="#">Henry</a>
+                                <a class="dropdown-item" href="#">Ken</a>
+                                <a class="dropdown-item" href="#">James</a>
+                                <a class="dropdown-item" href="#">Kaka</a>
+                                <a class="dropdown-item" href="#">Ronaldo</a>
+                                <a class="dropdown-item" href="#">Messi</a>
+                            </div>
+                        </li>
+                        <li class="">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#" role="button"
+                                aria-expanded="false">Online (10)
+                            </a>
+                            <div class=" dropdown-menu list2" aria-labelledby="dropdownMenuButton">
+                                <a class="dropdown-item" href="#">Hazard</a>
+                                <a class="dropdown-item" href="#">Mikel</a>
+                                <a class="dropdown-item" href="#">Saint</a>
+                                <a class="dropdown-item" href="#">Koke</a>
+                                <a class="dropdown-item" href="#">Henry</a>
+                                <a class="dropdown-item" href="#">Ken</a>
+                                <a class="dropdown-item" href="#">James</a>
+                                <a class="dropdown-item" href="#">Kaka</a>
+                                <a class="dropdown-item" href="#">Ronaldo</a>
+                                <a class="dropdown-item" href="#">Messi</a>
+                            </div>
+
+                        </li>
+                        <li class="btn btn-primary">
+                            Chat <span class="badge badge-light">5</span>
+                        </li>
+
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <div class="col down">
+        <h1> Stories </h1>
+        <img src="/lapto.jpg" width="100%" height="50%" border-radius=50% />
+        <br><br>
+
+        <div class="read-more-container">
+            <div class="container">
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Officiis, optio aut dicta, illum delectus
+                    dolor nisi repellendus adipisci aliquid eos odit minima nam odio rerum dolore, voluptatem quo modi
+                    reiciendis doloribus fuga autem voluptates! Sunt voluptatum cumque, perferendis neque iusto numquam
+                    totam in culpa corporis, ducimus natus tenetur, laboriosam dolores quibusdam aliquid commodi alias
+                    beatae nihil vel aspernatur dolorem? Dolorum ad doloremque ipsum rerum vel accusantium itaque. Iusto
+                    placeat cum laborum libero eum amet provident porro minus distinctio! Mollitia, hic? Quae quod
+                    facere explicabo sed blanditiis, sequi consequuntur natus provident odio tempora in ex repudiandae
+                    dolores! Voluptates, consequuntur! Expedita, nulla? <span class="read-more-text">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam voluptatum, corporis ad modi
+                        et ullam earum voluptas voluptate voluptates ducimus voluptatem illo, dolor odit itaque minima!
+                        Numquam non id repellendus maxime possimus quae unde voluptatum, nulla, minus voluptatem ab
+                        placeat a delectus dolor, esse voluptas rerum autem laudantium amet eos!
+                    </span></p>
+                <span class="read-more-btn">Read More....</span>
+            </div>
+
         </div>
     </div>
 
-    <button onclick="historyFunction()">Back</button>
-    <button onclick="myFunction()">Forward</button>
+    <!--A single page social media App with 3 columns
+// Nav
+// Profile details(dropdown menu(name, id,location))
+// stories
+// Those online*
+//Footer
+  //Badges
+//Dropdown {Create a drop-down menu for Profile}
+//Alerts -->
 
-    <script src="main.js"></script>
+
+
+
+
+
+    <footer>
+        <i> anhydraze &copy; 2022 </i>
+    </footer>
+    <script src="js/bootstrap.bundle.js"></script>
+    <script src="script.js"></script>
 </body>
 
+
 </html>
+
+<!--// Assignment
+1. Debug the codes to achieve proper alignment
+2. Create a dropdown list using yhe CONTACT nav link
+3. Add a news sections to the page -->
